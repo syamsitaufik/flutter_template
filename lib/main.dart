@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/dropdown-1/dropdown1_view.dart';
 import 'package:flutter_template/fakestore/views/fakestore_home.dart';
 import 'package:flutter_template/views/list_tile.dart';
-import 'package:flutter_template/e-rent/views/permohonan_page.dart';
 import 'package:flutter_template/indonesia/views/wilayah_indonesia.dart';
-
-import 'dropdown-2/dropdown2_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,11 +17,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/list-tile-template': (context) => const ListTileTemplate(),
-        '/cari-permohonan': (context) => PermohonanPage(),
         '/wilayah-indonesia': (context) => const WilayahIndonesia(),
         '/fakestore-app': (context) => FakestoreHome(),
-        '/dropdown-1': (context) => Dropdown1View(),
-        '/dropdown-2': (context) => const Dropdown2View(),
         // '/details': (context) => const DetailScreen(),
       },
     );
